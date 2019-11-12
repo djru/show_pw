@@ -1,5 +1,6 @@
 # Show Password
 A lot of websites have checkable options that show actual password text instead of `•••••••`. This is a really useful feature that I wish more sites had, so I made a userscript for it. You can use this with tampermonkey or any other userscript extension you want.
+
 ![version](https://img.shields.io/badge/Version-0.6-green)
  
  
