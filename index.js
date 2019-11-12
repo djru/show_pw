@@ -20,9 +20,7 @@
     pw_show.innerText = 'hide'
     //pw.insertAdjacentElement('afterend', pw_show)
     document.body.insertAdjacentElement('beforeend', pw_show)
-    pw_show.classList.add('pw_show')
-    var position = pw.getBoundingClientRect();
-    console.log(position.left, position.bottom)
+    const position = pw.getBoundingClientRect();
     const styles = {
                  position: 'absolute',
                 'z-index': 1000,
