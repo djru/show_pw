@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Show PW Everywhere
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  show password value everywhere
 // @author       You
 // @match        *://*/*
@@ -18,6 +18,7 @@
     }
     const pw_show = document.createElement('div')
     pw_show.innerText = 'hide'
+    //pw.insertAdjacentElement('afterend', pw_show)
     document.body.insertAdjacentElement('beforeend', pw_show)
     pw_show.classList.add('pw_show')
     var position = pw.getBoundingClientRect();
@@ -36,8 +37,8 @@
 
     pw.addEventListener("keyup", (e) => {
         if(e instanceof KeyboardEvent && pw_show.dataset.show !== "false" && pw.value !== ''){
-            if(chars.contains(e.key)){
-            has_started_typing = true
+            if(chars.includes(e.key)){
+                has_started_typing = true
             }
             if(has_started_typing){
                 pw_show.innerText = pw.value
