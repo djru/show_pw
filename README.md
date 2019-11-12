@@ -5,7 +5,7 @@ A lot of websites have checkable options that show actual password text instead 
  
  
 # Where can I get it?
-Install it on [Greasy Fork](https://greasyfork.org/en/scripts/392277-show-pw-everywhere)
+Install it on [Greasy Fork](https://greasyfork.org/en/scripts/392277-show-pw-everywhere).
  
 # What does it look like?
 ![Example](https://raw.githubusercontent.com/djru/show_pw/master/example2.png)
